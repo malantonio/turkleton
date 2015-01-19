@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>abram samuels sheet music collection</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="skeleton.css"/>
+    <style>
+    th { cursor: pointer; }
+    .sort-asc:after { content: '▲'; }
+    .sort-desc:after { content: '▼'; }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Abram Samuels Sheet Music Collection</h1>
+    <div class="row">
+    <div class="twelve columns">
+        <form class="row">
+            <select id="scope" class="two columns">
+                <option value="kw">Keyword</option>
+                <option value="ti">Title</option>
+                <option value="au">Author</option>
+            </select>
+            <input type="text" id="query" class="eight columns" />
+            <button type="submit" class="two columns">Search</button>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div id="results" class="twelve columns">
+        <table class="u-full-width">
+            <caption></caption>
+            <thead></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+
+    </div>
+<script src="turkleton.js"></script>
+</body>
+</html>
